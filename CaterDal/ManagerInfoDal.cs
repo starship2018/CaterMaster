@@ -86,10 +86,10 @@ namespace CaterDal
         /// </summary>
         /// <param name="mi"></param>
         /// <returns></returns>
-        public int Delete(ManagerInfo mi)
+        public int Delete(int id)
         {
             string sql = "delete from managerinfo where mid=@id";
-            SQLiteParameter sp=new SQLiteParameter("@id",mi.MId);
+            SQLiteParameter sp=new SQLiteParameter("@id",id);
             return SqliteHelper.ExcuteNoQuery(sql, sp);
         }
     }

@@ -20,6 +20,7 @@ namespace CaterBll
             return miDal.GetList();
         }
 
+        //均以boolean类型作为返回值，是为了确认操作状态是否顺利完成，或者因意外而失败
         public bool Add(ManagerInfo mi)
         {
             return miDal.Insert(mi) > 0;
@@ -30,9 +31,9 @@ namespace CaterBll
             return miDal.Update(mi) > 0;
         }
 
-        public bool Remove(ManagerInfo mi)
+        public bool Remove(int id)
         {
-            return miDal.Delete(mi) > 0;
+            return miDal.Delete(id) > 0;
         }
     }
 }

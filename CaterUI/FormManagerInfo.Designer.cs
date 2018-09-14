@@ -59,7 +59,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TXT = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -258,6 +258,7 @@
             this.dgvList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvList.Size = new System.Drawing.Size(344, 262);
             this.dgvList.TabIndex = 0;
+            this.dgvList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvList_CellDoubleClick);
             // 
             // Column1
             // 
@@ -292,7 +293,7 @@
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.textBox3);
             this.groupBox3.Controls.Add(this.textBox2);
-            this.groupBox3.Controls.Add(this.textBox1);
+            this.groupBox3.Controls.Add(this.TXT);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.label7);
@@ -311,6 +312,7 @@
             this.btnDelete.TabIndex = 21;
             this.btnDelete.Text = "删除选中的人员";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // label12
             // 
@@ -330,6 +332,7 @@
             this.btnCalloff.TabIndex = 19;
             this.btnCalloff.Text = "取消";
             this.btnCalloff.UseVisualStyleBackColor = true;
+            this.btnCalloff.Click += new System.EventHandler(this.btnCalloff_Click);
             // 
             // btnAdd
             // 
@@ -337,8 +340,9 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 18;
-            this.btnAdd.Text = "添加";
+            this.btnAdd.Text = "添加/保存";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // rbWaiter
             // 
@@ -395,14 +399,14 @@
             this.textBox2.Size = new System.Drawing.Size(160, 21);
             this.textBox2.TabIndex = 4;
             // 
-            // textBox1
+            // TXT
             // 
-            this.textBox1.Location = new System.Drawing.Point(54, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(160, 21);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "添加时无编号";
+            this.TXT.Location = new System.Drawing.Point(54, 30);
+            this.TXT.Name = "TXT";
+            this.TXT.ReadOnly = true;
+            this.TXT.Size = new System.Drawing.Size(160, 21);
+            this.TXT.TabIndex = 3;
+            this.TXT.Text = "添加时无编号";
             // 
             // label9
             // 
@@ -484,7 +488,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TXT;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
