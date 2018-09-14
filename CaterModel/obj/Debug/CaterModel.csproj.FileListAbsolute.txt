@@ -1,0 +1,5 @@
+C:\Users\Yu\Desktop\CaterMaster\CaterModel\bin\Debug\CaterModel.dll
+C:\Users\Yu\Desktop\CaterMaster\CaterModel\bin\Debug\CaterModel.pdb
+C:\Users\Yu\Desktop\CaterMaster\CaterModel\obj\Debug\CaterModel.csprojResolveAssemblyReference.cache
+C:\Users\Yu\Desktop\CaterMaster\CaterModel\obj\Debug\CaterModel.dll
+C:\Users\Yu\Desktop\CaterMaster\CaterModel\obj\Debug\CaterModel.pdb
