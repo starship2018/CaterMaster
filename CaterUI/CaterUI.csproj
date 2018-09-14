@@ -82,6 +82,10 @@
       <Project>{6c342d82-0352-46ab-a1ad-10649a456894}</Project>
       <Name>CaterBll</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CaterModel\CaterModel.csproj">
+      <Project>{683429f1-c711-4e86-a2bb-466ebec3de82}</Project>
+      <Name>CaterModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

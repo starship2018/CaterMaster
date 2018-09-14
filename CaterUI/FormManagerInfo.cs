@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CaterBll;
 
 namespace CaterUI
 {
@@ -15,6 +16,19 @@ namespace CaterUI
         public FormManagerInfo()
         {
             InitializeComponent();
+        }
+
+        ManagerInfoBll miBll=new ManagerInfoBll();
+
+        private void FormManagerInfo_Load(object sender, EventArgs e)
+        {
+            LoadList();
+        }
+
+        void LoadList()
+        {
+            dgvList.AutoGenerateColumns = false;
+            dgvList.DataSource = miBll.GetList();
         }
     }
 }
