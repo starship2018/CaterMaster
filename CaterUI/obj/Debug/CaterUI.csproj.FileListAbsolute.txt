@@ -18,3 +18,6 @@ C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterUI\bin\Debug\System.Data.SQLite
 C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterUI\bin\Debug\CaterCommon.pdb
 C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterUI\obj\Debug\CaterUI.exe
 C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterUI\obj\Debug\CaterUI.pdb
+C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterUI\obj\Debug\CaterUI.FormLogin.resources
+C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterUI\obj\Debug\CaterUI.FormMain.resources
+C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterUI\obj\Debug\CaterUI.FormManagerTypeInfo.resources

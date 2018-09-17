@@ -44,16 +44,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormManagerInfo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormManagerInfo.Designer.cs">
       <DependentUpon>FormManagerInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormManagerTypeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManagerTypeInfo.Designer.cs">
+      <DependentUpon>FormManagerTypeInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormManagerInfo.resx">
       <DependentUpon>FormManagerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManagerTypeInfo.resx">
+      <DependentUpon>FormManagerTypeInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -63,7 +90,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Img\Thumbs.db" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -86,6 +115,14 @@
       <Project>{683429f1-c711-4e86-a2bb-466ebec3de82}</Project>
       <Name>CaterModel</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Img\LoginImg.jpg" />
+    <Content Include="Img\ManagerImg.png" />
+    <Content Include="Img\tableImg.jpg" />
+    <Content Include="Img\manuImg.jpg" />
+    <Content Include="Img\exitImg.jpg" />
+    <Content Include="Img\vipImg.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

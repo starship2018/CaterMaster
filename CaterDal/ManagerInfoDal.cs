@@ -92,5 +92,28 @@ namespace CaterDal
             SQLiteParameter sp=new SQLiteParameter("@id",id);
             return SqliteHelper.ExcuteNoQuery(sql, sp);
         }
+
+
+        public ManagerInfo GetByName(string name)
+        {
+            string sql = "select * from managerinfo where mname=@name";
+            SQLiteParameter sp =new SQLiteParameter("@name", name);
+            DataTable table=SqliteHelper.GetDataTable(sql, sp);
+            ManagerInfo mi = null;
+            //判断取到值的table是否为空？
+            if (table.Rows.Count>0)
+            {
+                mi=new ManagerInfo();
+                mi.MId=Convert.ToInt32(table.Rows[0][0]);
+                mi.MName = table.Rows[0][1].ToString();
+                mi.MPwd = table.Rows[0][2].ToString();
+                mi.MType = Convert.ToInt32(table.Rows[0][3]);
+            }
+            else
+            {
+
+            }
+            return mi;
+        }
     }
 }

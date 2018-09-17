@@ -14,11 +14,25 @@ namespace CaterUI
 {
     public partial class FormManagerInfo : Form
     {
-        public FormManagerInfo()
+        private FormManagerInfo()
         {
             InitializeComponent();
         }
+        
+        //实现单例模式
+        private static FormManagerInfo _formManagerInfo;
 
+        public  static FormManagerInfo CreateFrom()
+        {
+            if(_formManagerInfo==null)
+            {
+                _formManagerInfo=new FormManagerInfo();
+            }
+
+            return _formManagerInfo;
+        }
+        
+        //创建逻辑层对象
         ManagerInfoBll miBll=new ManagerInfoBll();
         
 
