@@ -42,6 +42,7 @@
     <Compile Include="LoginState.cs" />
     <Compile Include="ManagerInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VIPInfo.cs" />
     <Compile Include="VIPTypeInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

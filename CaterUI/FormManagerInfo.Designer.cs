@@ -443,7 +443,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Name = "FormManagerInfo";
-            this.Text = "FormManagerInfo";
+            this.Text = "管理员管理";
             this.Load += new System.EventHandler(this.FormManagerInfo_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

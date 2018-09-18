@@ -62,11 +62,17 @@
     <Compile Include="FormManagerInfo.Designer.cs">
       <DependentUpon>FormManagerInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormManagerTypeInfo.cs">
+    <Compile Include="FormVIPInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormManagerTypeInfo.Designer.cs">
-      <DependentUpon>FormManagerTypeInfo.cs</DependentUpon>
+    <Compile Include="FormVIPInfo.Designer.cs">
+      <DependentUpon>FormVIPInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVIPTypeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVIPTypeInfo.Designer.cs">
+      <DependentUpon>FormVIPTypeInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -79,8 +85,11 @@
     <EmbeddedResource Include="FormManagerInfo.resx">
       <DependentUpon>FormManagerInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormManagerTypeInfo.resx">
-      <DependentUpon>FormManagerTypeInfo.cs</DependentUpon>
+    <EmbeddedResource Include="FormVIPInfo.resx">
+      <DependentUpon>FormVIPInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVIPTypeInfo.resx">
+      <DependentUpon>FormVIPTypeInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
