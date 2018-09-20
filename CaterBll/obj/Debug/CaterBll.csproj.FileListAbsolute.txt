@@ -11,3 +11,5 @@ C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterBll\bin\Debug\System.Data.SQLit
 C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterBll\obj\Debug\CaterBll.csprojResolveAssemblyReference.cache
 C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterBll\obj\Debug\CaterBll.dll
 C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterBll\obj\Debug\CaterBll.pdb
+C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterBll\bin\Debug\ChnCharInfo.dll
+C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterBll\bin\Debug\ChnCharInfo.xml

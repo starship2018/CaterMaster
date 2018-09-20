@@ -8,3 +8,7 @@ C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterCommon\bin\Debug\CaterCommon.pd
 C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterCommon\obj\Debug\CaterCommon.csprojResolveAssemblyReference.cache
 C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterCommon\obj\Debug\CaterCommon.dll
 C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterCommon\obj\Debug\CaterCommon.pdb
+C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterCommon\bin\Debug\ChnCharInfo.dll
+C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterCommon\bin\Debug\ChnCharInfo.xml
+C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterCommon\bin\Debug\System.Data.SQLite.dll
+C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterCommon\bin\Debug\System.Data.SQLite.xml

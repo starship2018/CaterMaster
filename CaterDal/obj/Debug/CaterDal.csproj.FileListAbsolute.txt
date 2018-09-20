@@ -10,3 +10,5 @@ C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterDal\bin\Debug\CaterModel.pdb
 C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterDal\bin\Debug\System.Data.SQLite.xml
 C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterDal\obj\Debug\CaterDal.dll
 C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterDal\obj\Debug\CaterDal.pdb
+C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterDal\bin\Debug\ChnCharInfo.dll
+C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterDal\bin\Debug\ChnCharInfo.xml

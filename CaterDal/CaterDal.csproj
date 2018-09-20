@@ -43,9 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DishInfoDal.cs" />
+    <Compile Include="DishTypeInfoDal.cs" />
     <Compile Include="ManagerInfoDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SqliteHelper.cs" />
     <Compile Include="VIPInfoDal.cs" />
     <Compile Include="VIPTypeInfoDal.cs" />
   </ItemGroup>
