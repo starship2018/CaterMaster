@@ -35,6 +35,7 @@
             this.menuDishInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.menuOrder = new System.Windows.Forms.ToolStripMenuItem();
             this.menuQuit = new System.Windows.Forms.ToolStripMenuItem();
+            this.tcHallInfo = new System.Windows.Forms.TabControl();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,11 +101,21 @@
             this.menuQuit.Text = "Exit";
             this.menuQuit.Click += new System.EventHandler(this.menuQuit_Click);
             // 
+            // tcHallInfo
+            // 
+            this.tcHallInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tcHallInfo.Location = new System.Drawing.Point(0, 25);
+            this.tcHallInfo.Name = "tcHallInfo";
+            this.tcHallInfo.SelectedIndex = 0;
+            this.tcHallInfo.Size = new System.Drawing.Size(881, 385);
+            this.tcHallInfo.TabIndex = 2;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(881, 410);
+            this.Controls.Add(this.tcHallInfo);
             this.Controls.Add(this.menuStrip1);
             this.Name = "FormMain";
             this.Text = "FormMain";
@@ -127,8 +138,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuDishInfo;
         private System.Windows.Forms.ToolStripMenuItem menuOrder;
         private System.Windows.Forms.ToolStripMenuItem menuQuit;
-
-
-
+        private System.Windows.Forms.TabControl tcHallInfo;
     }
 }

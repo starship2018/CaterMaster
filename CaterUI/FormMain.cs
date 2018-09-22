@@ -8,6 +8,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CaterBll;
 
 namespace CaterUI
 {
@@ -31,13 +32,16 @@ namespace CaterUI
             {
                 menuManagerInfo.Visible = false;
             }
+
+            LoadHallInfo();
         }
 
+        //退出按钮
         private void menuQuit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        //右上角关闭按钮
         private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
@@ -50,6 +54,18 @@ namespace CaterUI
             mi.Focus();
         }
 
+        //加载主界面信息
+        void LoadHallInfo()
+        {
+            HallInfoBll bll=new HallInfoBll();
+            var halllist=bll.GetList();
+            foreach (var hall in halllist)
+            {
+                //根据创建标签页
+                TabPage tp=new TabPage(hall.HTitle);
+                tcHallInfo.Controls.Add(tp);
+            }
+        }
 
 
 
