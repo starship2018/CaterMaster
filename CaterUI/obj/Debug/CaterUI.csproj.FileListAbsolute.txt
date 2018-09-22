@@ -26,3 +26,5 @@ C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterUI\bin\Debug\ChnCharInfo.dll
 C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterUI\bin\Debug\ChnCharInfo.xml
 C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterUI\obj\Debug\CaterUI.FormDishTypeInfo.resources
 C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterUI\obj\Debug\CaterUI.FormDishInfo.resources
+C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterUI\obj\Debug\CaterUI.FormHallInfo.resources
+C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterUI\obj\Debug\CaterUI.FormTableInfo.resources
