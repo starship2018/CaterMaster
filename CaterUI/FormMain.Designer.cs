@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuManagerInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMemberInfo = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,6 +38,7 @@
             this.menuOrder = new System.Windows.Forms.ToolStripMenuItem();
             this.menuQuit = new System.Windows.Forms.ToolStripMenuItem();
             this.tcHallInfo = new System.Windows.Forms.TabControl();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,6 +73,7 @@
             this.menuMemberInfo.Name = "menuMemberInfo";
             this.menuMemberInfo.Size = new System.Drawing.Size(39, 21);
             this.menuMemberInfo.Text = "VIP";
+            this.menuMemberInfo.Click += new System.EventHandler(this.menuMemberInfo_Click);
             // 
             // menuTableInfo
             // 
@@ -78,6 +82,7 @@
             this.menuTableInfo.Name = "menuTableInfo";
             this.menuTableInfo.Size = new System.Drawing.Size(52, 21);
             this.menuTableInfo.Text = "Table";
+            this.menuTableInfo.Click += new System.EventHandler(this.menuTableInfo_Click);
             // 
             // menuDishInfo
             // 
@@ -85,6 +90,7 @@
             this.menuDishInfo.Name = "menuDishInfo";
             this.menuDishInfo.Size = new System.Drawing.Size(45, 21);
             this.menuDishInfo.Text = "Dish";
+            this.menuDishInfo.Click += new System.EventHandler(this.menuDishInfo_Click);
             // 
             // menuOrder
             // 
@@ -92,6 +98,7 @@
             this.menuOrder.Name = "menuOrder";
             this.menuOrder.Size = new System.Drawing.Size(55, 21);
             this.menuOrder.Text = "Order";
+            this.menuOrder.Click += new System.EventHandler(this.menuOrder_Click);
             // 
             // menuQuit
             // 
@@ -109,6 +116,13 @@
             this.tcHallInfo.SelectedIndex = 0;
             this.tcHallInfo.Size = new System.Drawing.Size(881, 385);
             this.tcHallInfo.TabIndex = 2;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "desk1.png");
+            this.imageList1.Images.SetKeyName(1, "desk2.png");
             // 
             // FormMain
             // 
@@ -139,5 +153,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuOrder;
         private System.Windows.Forms.ToolStripMenuItem menuQuit;
         private System.Windows.Forms.TabControl tcHallInfo;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }

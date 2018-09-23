@@ -75,8 +75,10 @@ namespace CaterDal
         {
             using (SQLiteConnection conn=new SQLiteConnection(connStr))
             {
+                conn.Open();
                 using (SQLiteCommand cmd=conn.CreateCommand())
                 {
+                    
                     //添加参数
                     cmd.Parameters.AddRange(sp);
                     cmd.CommandText = sql;

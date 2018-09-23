@@ -14,16 +14,30 @@ namespace CaterUI
 {
     public partial class FormVIPInfo : Form
     {
-        public FormVIPInfo()
+        private FormVIPInfo()
         {
             InitializeComponent();
             this.dgvList.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             this.dgvList.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
         }
-
+       
         VIPInfoBll bll = new VIPInfoBll();
 
+        //单例模式的实现
+        #region 单例模式的实现
+        static private FormVIPInfo _formVipInfo;
+
+        public static FormVIPInfo CreateFormVipInfo()
+        {
+            if (_formVipInfo == null)
+            {
+                _formVipInfo = new FormVIPInfo();
+            }
+
+            return _formVipInfo;
+        } 
+        #endregion
 
         /// <summary>
         /// 刷新和初始化查询
@@ -69,7 +83,7 @@ namespace CaterUI
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (txtId.Text=="添加时无编号")
+            if (txtId.Text == "添加时无编号")
             {
                 //添加功能
                 if (txtNameAdd.Text == "")
@@ -99,7 +113,7 @@ namespace CaterUI
             else
             {
                 //修改功能
-                VIPInfo vip=new VIPInfo();
+                VIPInfo vip = new VIPInfo();
                 vip.MName = txtNameAdd.Text;
                 vip.MTypeId = ddlType.SelectedIndex;
                 vip.MPhone = txtPhoneAdd.Text;
@@ -115,9 +129,9 @@ namespace CaterUI
                     Refresh();
                 }
 
-                
+
             }
-            
+
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -129,8 +143,8 @@ namespace CaterUI
 
         private void dgvList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            var row=dgvList.Rows[e.RowIndex];
-            txtId.Text=row.Cells[0].Value.ToString();
+            var row = dgvList.Rows[e.RowIndex];
+            txtId.Text = row.Cells[0].Value.ToString();
             txtNameAdd.Text = row.Cells[1].Value.ToString();
             ddlType.Text = row.Cells[2].Value.ToString();
             txtPhoneAdd.Text = row.Cells[3].Value.ToString();
@@ -153,14 +167,14 @@ namespace CaterUI
                 Refresh();
             }
 
-            
+
         }
 
         private void btnAddType_Click(object sender, EventArgs e)
         {
-            FormVIPTypeInfo vti=new FormVIPTypeInfo();
-            DialogResult result= vti.ShowDialog();
-            if (result==DialogResult.OK)
+            FormVIPTypeInfo vti = new FormVIPTypeInfo();
+            DialogResult result = vti.ShowDialog();
+            if (result == DialogResult.OK)
             {
                 LoadTypeList();
                 Refresh();
@@ -176,5 +190,6 @@ namespace CaterUI
         {
             Refresh();
         }
+
     }
 }

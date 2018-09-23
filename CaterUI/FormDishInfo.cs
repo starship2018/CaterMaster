@@ -14,12 +14,27 @@ namespace CaterUI
 {
     public partial class FormDishInfo : Form
     {
-        public FormDishInfo()
+        private FormDishInfo()
         {
             InitializeComponent();
             this.dgvList.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             this.dgvList.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
         }
+
+        #region 单例模式的实现
+        private static FormDishInfo _formDishInfo;
+
+        public static FormDishInfo CreateFormDishInfo()
+        {
+            if (_formDishInfo == null)
+            {
+                _formDishInfo = new FormDishInfo();
+            }
+
+            return _formDishInfo;
+        } 
+        #endregion
+
 
         DishInfoBll bll = new DishInfoBll();
         void LoadList()
@@ -190,5 +205,6 @@ namespace CaterUI
                 LoadList();
             }
         }
+
     }
 }

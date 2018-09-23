@@ -81,6 +81,18 @@
     <Compile Include="FormManagerInfo.Designer.cs">
       <DependentUpon>FormManagerInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormOrderDish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrderDish.Designer.cs">
+      <DependentUpon>FormOrderDish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrderPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrderPay.Designer.cs">
+      <DependentUpon>FormOrderPay.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTableInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +130,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormManagerInfo.resx">
       <DependentUpon>FormManagerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrderDish.resx">
+      <DependentUpon>FormOrderDish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrderPay.resx">
+      <DependentUpon>FormOrderPay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTableInfo.resx">
       <DependentUpon>FormTableInfo.cs</DependentUpon>
@@ -160,6 +178,10 @@
       <Project>{683429f1-c711-4e86-a2bb-466ebec3de82}</Project>
       <Name>CaterModel</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="image\desk1.png" />
+    <Content Include="image\desk2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

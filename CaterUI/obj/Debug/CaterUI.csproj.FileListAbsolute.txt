@@ -59,3 +59,5 @@ C:\Users\Aleo\Desktop\catermaster\CaterMaster\CaterUI\obj\Debug\CaterUI.csproj.C
 C:\Users\Aleo\Desktop\catermaster\CaterMaster\CaterUI\obj\Debug\CaterUI.csproj.CopyComplete
 C:\Users\Aleo\Desktop\catermaster\CaterMaster\CaterUI\obj\Debug\CaterUI.exe
 C:\Users\Aleo\Desktop\catermaster\CaterMaster\CaterUI\obj\Debug\CaterUI.pdb
+C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterUI\obj\Debug\CaterUI.FormOrderDish.resources
+C:\Users\Yu\Desktop\CaterMaster\CaterMaster\CaterUI\obj\Debug\CaterUI.FormOrderPay.resources

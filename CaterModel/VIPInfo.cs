@@ -21,5 +21,7 @@ namespace CaterModel
         public bool MIsdelete { get; set; }
 
         public string MTypeTitle { get; set; }
+
+        public decimal MDiscount { get; set; }
     }
 }

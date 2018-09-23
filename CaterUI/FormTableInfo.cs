@@ -15,14 +15,30 @@ namespace CaterUI
 {
     public partial class FormTableInfo : Form
     {
-        public FormTableInfo()
+        #region 单例模式的实现
+        private FormTableInfo()
         {
             InitializeComponent();
             this.dgvList.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             this.dgvList.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
         }
 
+        private static FormTableInfo _formTableInfo;
+
+        public static FormTableInfo CreateFormTableInfo()
+        {
+            if (_formTableInfo == null)
+            {
+                _formTableInfo = new FormTableInfo();
+            }
+
+            return _formTableInfo;
+        } 
+        #endregion
+
         TableInfoBll bll=new TableInfoBll();
+
+        public event Action Refresh;
         private void FormTableInfo_Load(object sender, EventArgs e)
         {
             
@@ -148,6 +164,7 @@ namespace CaterUI
             }
 
             LoadList();
+            Refresh();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -198,6 +215,7 @@ namespace CaterUI
                 
             }
             LoadList();
+            Refresh();
         }
 
         private void btnAddHall_Click(object sender, EventArgs e)
@@ -207,6 +225,7 @@ namespace CaterUI
             fhi.UpdateForm += LoadTypeList;
             fhi.Show();
         }
+
 
 
     }
